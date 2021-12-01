@@ -1,0 +1,74 @@
+{
+    "id": 1,
+    "name": "Aquarium Pula d.o.o.",
+    "email": "mohammad54@example.com",
+    "address": "Verudela bb, HR-52100 Pula",
+    "oib": 972615522,
+    "place_zip": "52100",
+    "bank_name": "Romaguera-Kreiger",
+    "telephone": 2700123907710,
+    "mobile": 2633781986095,
+    "fax": 4143961924609,
+    "web_address": "https://www.dickinson.com/labore-hic-sint-reprehenderit-quaerat-omnis-voluptatibus",
+    "iban": 4539113892179402,
+    "created_at": "2021-08-31T12:40:37.000000Z",
+    "updated_at": "2021-08-31T12:40:37.000000Z",
+    "shelter_types": [
+        {
+            "id": 1,
+            "name": "Oporavak strogo za\u0161ti\u0107enih vrsta iz prirode RH",
+            "code": "OSZV",
+            "created_at": "2021-08-31T12:40:37.000000Z",
+            "updated_at": "2021-08-31T12:40:37.000000Z",
+            "pivot": { "shelter_id": 1, "shelter_type_id": 1 }
+        }
+    ],
+    "users": [
+        {
+            "id": 2,
+            "name": "Admin User",
+            "email": "admin@test.com",
+            "email_verified_at": "2021-08-31T12:40:37.000000Z",
+            "remember_token": "NEJilaN28a",
+            "created_at": "2021-08-31T12:40:37.000000Z",
+            "updated_at": "2021-08-31T12:40:37.000000Z",
+            "shelter_id": 1,
+            "roles": [
+                {
+                    "id": 2,
+                    "name": "Super-Admin",
+                    "guard_name": "web",
+                    "created_at": "2021-08-31T12:40:37.000000Z",
+                    "updated_at": "2021-08-31T12:40:37.000000Z",
+                    "pivot": {
+                        "model_id": 2,
+                        "role_id": 2,
+                        "model_type": "App\\Models\\User"
+                    }
+                }
+            ]
+        }
+    ],
+    "animal_items": [
+        {
+            "id": 1,
+            "animal_id": 1,
+            "status": 1,
+            "created_at": null,
+            "updated_at": null,
+            "pivot": { "shelter_id": 1, "animal_item_id": 1 },
+            "animals": [
+                {
+                    "id": 1,
+                    "animal_category_id": 1,
+                    "name": "vuk",
+                    "latin_name": "Canis lupus",
+                    "animal_code_id": 0,
+                    "created_at": "2021-08-31T12:40:37.000000Z",
+                    "updated_at": "2021-08-31T12:40:37.000000Z",
+                    "pivot": { "animal_item_id": 1, "animal_id": 1 }
+                }
+            ]
+        }
+    ]
+}
